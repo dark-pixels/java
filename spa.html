@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="zelf.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Number and Name Collection</title>
+</head>
+<body class="mb">
+    <div class="fg"><img class="fg1" src="zampo.png" alt=""></div><br><br>
+    <div class="pt">Join the Zapzo Squad! 🚀 <br><br>
+        Get the latest buzz and early access before anyone else!
+        Drop your digits below: </div>
+   <div class="form"> <input type="text" id="name" placeholder="Enter your name"><br><br>
+    <input type="text" id="mobileNumber" placeholder="Enter mobile number">
+    <br><br>
+    <div class="sub"><button id="submitButton">Submit</button></div></div>
+    <div class="bot"><br>
+        Why Zapzo? <br><br>Zapzo isn’t just another app—it’s your new go-to for discovering epic finds, sharing cool stuff with friends, and getting in on exclusive deals. Whether you're a trendsetter or a low-key shopper, Zapzo's got your back!Sneak Peeks: Be the first to see what’s dropping next.Exclusive Perks: Special offers just for our early birds. <br><br>
+        We’re here to help! Reach out to us at support@zapzo.com, and we’ll get back to you faster than you can say "Zapzo!"Ready to Zapzo your way to the top? Enter your number now and join the fun!
+    </div>
+
+    <!-- Include the Supabase JS library -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script>
+        // Initialize Supabase
+        const SUPABASE_URL = 'https://jzwewjixthiytqjfizvi.supabase.co/';
+        const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp6d2V3aml4dGhpeXRxamZpenZpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjQ2Nzc1NTYsImV4cCI6MjA0MDI1MzU1Nn0.VldZcz54lttHmMNKBRJluSl-keMxHR1E4Ta-5O56GKk';
+        const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById('submitButton').addEventListener('click', async function() {
+                const name = document.getElementById('name').value;
+                const mobileNumber = document.getElementById('mobileNumber').value;
+
+                if (name && mobileNumber) {
+                    try {
+                        const { data, error } = await supabaseClient
+                            .from('users')
+                            .insert([{ name: name, phone_number: mobileNumber }]);
+
+                        if (error) {
+                            alert('Error storing details');
+                            console.error(error);
+                        } else {
+                            alert('Details stored successfully!');
+                        }
+                    } catch (err) {
+                        console.error('Unexpected error:', err);
+                    }
+                } else {
+                    alert('Please enter both name and mobile number.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

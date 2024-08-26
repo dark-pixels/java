@@ -1,0 +1,72 @@
+.pro{
+ width: 100%;
+ height: 90%;   
+}
+.mob{
+    width: 100%;
+    height: 80%;
+}
+.button{
+    font-size: 300%;
+    font-weight: bolder;
+
+    background-image: url(bg.jpeg);
+    color: black;
+    text-align: center;
+
+}
+.foot{
+    padding: 5%;
+    background-image:url(bg.jpeg);
+
+}
+.ig{
+    width: 10%;
+    height: 5%;
+    padding-left: 45%;
+}
+.body{
+    background-image: url(bg.jpeg);
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-style: italic;
+    font-size: large;
+}
+.text1{
+    text-align: left;
+    padding-left: 8%;
+}
+.fg1{
+    width: 30%;
+    height: 30%;
+    padding-left: 35%;
+    
+}
+.pt{
+    font-size: 130%;
+    padding-bottom: 2%;
+}
+.mb{
+    background-image: url(bg.jpeg);
+}
+.zam{
+    padding-left: 26%;
+    font-size: 300%;
+    color: blue;
+}
+.sub{
+    margin-left: 24%;
+    padding: 2%;
+    
+}
+.form{
+    padding-left: 20%;
+}
+.bot{
+font-size: 90%;
+text-align: center;
+}
