@@ -1,0 +1,267 @@
+.pro {
+    width: 980px; /* 100% of 375px */
+    height: 1600px; /* 80% of 812px */
+    margin: 3.75px; /* 1% of 375px */
+    border-radius: 20%;
+}
+
+.mob {
+    width: 980px; /* 100% of 375px */
+    height: 1700px; /* 90% of 812px */
+}
+
+.button {
+    font-size: 48px; /* 300% of 16px (base font size) */
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.foot {
+    padding: 18.75px; /* 5% of 375px */
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    border-radius: 0% 100% 31% 0% / 36% 35% 0% 0% ;
+}
+
+.ig {
+    width: 130px; /* 10% of 375px */
+    height: 130px; /* 5% of 812px */
+    padding-left: 350px; /* 46% of 375px */
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-style: italic;
+    font-size: 64px; /* 400% of 16px (base font size) */
+    background-color: black;
+    color: antiquewhite;
+    padding: 11.25px; /* 3% of 375px */
+    padding-top: 162.4px; /* 20% of 812px */
+    border-radius: 100% 0% 31% 0% / 36% 42% 0% 0% ;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+  font-style: normal;
+    /* border-radius: 195px 123.75px 37.5px 0px / 154.28px 37.5px 0px 0px; Convert % to px */
+}
+
+
+.fg1 {
+    width: 200px; /* 30% of 375px */
+    height: 243.6px; /* 30% of 812px */
+    padding-left: 350px; /* 35% of 375px */
+}
+
+.pt {
+    font-size: 20.8px; /* 130% of 16px (base font size) */
+    padding-bottom: 16.24px; /* 2% of 812px */
+}
+
+
+
+.zam {
+    padding-left: 97.5px; /* 26% of 375px */
+    font-size: 48px; /* 300% of 16px (base font size) */
+    color: blue;
+}
+
+.sub {
+    margin-left: 131.25px; /* 35% of 375px */
+    padding: 7.5px; /* 2% of 375px */
+}
+.mb{
+    background-image: url(bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: auto 150%;
+  }
+  .bot{
+    font-size: 90%;
+    text-align:left;
+    }
+
+
+.box {
+    font-size: 22.4px; /* 140% of 16px (base font size) */
+}
+@font-face {
+    font-family: 'CustomFont'; /* Name your font family */
+    src: url('kaushan-script.zip'); /* Locate the .ttf file within your directory*/
+  }
+  
+.pp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    /* font-style: italic; */
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+  font-style: normal;
+    font-size: 48px; /* 300% of 16px (base font size) */
+    /* font-weight: bold; */
+    color: rgb(48, 14, 172);
+}
+
+.ext {
+    width: 980px; /* 100% of 375px */
+    height: 1580px; /* 90% of 812px */
+    padding-top: 32.48px; /* 4% of 812px */
+    background-color: black;
+}
+.foot{
+    background-color: black;
+    border-radius: 0% 100% 51% 48% / 36% 100% 0% 0% ;
+    .ft{
+        font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-size: 45px;
+
+    }
+}
+.button {
+    /* display: inline-flex; */
+    /* align-items: center; */
+    margin-left: 370px; /* 36% of 375px */
+    margin-top: 24.36px; /* 3% of 812px */
+    /* justify-content: center; */
+    padding: 15px 30px;
+    /* border: 0; */
+    /* position: relative; */
+    /* overflow: hidden; */
+    border-radius: 10rem;
+    transition: all 0.02s;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    z-index: 0;
+    box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255);
+}
+/* .button:hover {
+    background: rgb(112, 11, 11);
+    color: rgb(0, 0, 0);
+  }
+  
+  .button:active {
+    transform: scale(0.97);
+  } */
+  
+  /* .hoverEffect {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  } */
+  
+  /* .hoverEffect div {
+    background: rgba(175, 4, 4, 0.952);
+    background: linear-gradient(
+      90deg,
+      rgb(136, 6, 6) 0%,
+      rgb(82, 5, 5) 49%,
+      rgb(196, 4, 14) 100%
+    );
+    border-radius: 40rem;
+    width: 10rem;
+    height: 10rem;
+    transition: 0.4s;
+    filter: blur(20px);
+    animation: effect infinite 3s linear;
+    opacity: 0.5;
+  } */
+  
+/* .button:hover .hoverEffect div {
+    width: 8rem;
+    height: 8rem;
+  }
+  
+  @keyframes effect {
+    0% {
+      transform: rotate(0deg);
+    }
+    
+    100% {
+      transform: rotate(360deg);
+    }
+} */
+.lb {
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 50px;
+    border-radius: 0% 100% 51% 48% / 36% 0% 30% 27% ;
+}
+
+.body {
+    margin: 0;
+    background: #fff; /* Default background color for mobile */
+}
+
+.mobile-container {
+    width: 980px; /* Full width on mobile */
+    max-width: 980px; /* Adjust to your mobile design width */
+    min-height: 100vh;
+    margin: 0 auto;
+    background: #fff; /* Background color for mobile view */
+    background-image: url(bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+@media only screen and (min-width: 1024px) { /* Apply only for desktops/laptops */
+    .body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url('bg.jpeg') center/cover no-repeat;
+        overflow: hidden; /* Prevent scrolling */
+        background-image: url(bg.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .mobile-container {
+        width: 990px; /* Fixed width matching mobile design */
+        height: 500px; /* Fixed height matching mobile design */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Optional shadow */
+        overflow-y: auto; /* Scrollable if needed */
+        background-image: url(bg.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+.bot {
+    font-size: 14.4px; /* 90% of 16px (base font size) */
+    text-align: left;
+    padding-right: 400px;
+}
+.mb {
+    background-image: url(bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+    padding-left: 450px;
+}
+.form {
+    padding-left: 150px; /* 10% of 375px */
+}
+.sub {
+    margin-left: 90px; /* 35% of 375px */
+    padding: 7.5px; /* 2% of 375px */
+}
+.fg1 {
+    width: 200px; /* 30% of 375px */
+    height: 243.6px; /* 30% of 812px */
+    padding-left: 200px; /* 35% of 375px */
+}
+}

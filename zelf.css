@@ -1,33 +1,36 @@
 .pro{
  width: 100%;
- height: 90%;   
+ height: 80%;
+ margin: 1%;
 }
 .mob{
     width: 100%;
-    height: 80%;
+    height: 90%;
 }
 .button{
     font-size: 300%;
     font-weight: bolder;
 
-    background-image: url(bg.jpeg);
+    /* background-image: url(bg.jpeg); */
     color: black;
     text-align: center;
 
 }
 .foot{
     padding: 5%;
-    background-image:url(bg.jpeg);
+    /* background-image:url(bg.jpeg); */
 
 }
 .ig{
     width: 10%;
     height: 5%;
-    padding-left: 45%;
+    padding-left: 46%;
 }
-.body{
+/* .body{
     background-image: url(bg.jpeg);
-}
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+} */
 .text{
     display: flex;
     flex-direction: column;
@@ -35,10 +38,13 @@
     text-align: center;
     font-style: italic;
     font-size: large;
-}
-.text1{
-    text-align: left;
-    padding-left: 8%;
+    background-color: black;
+    color: antiquewhite;
+    font-size: 400%;
+    padding: 3%;
+    padding-top: 20%;
+
+    border-radius: 52% 33% 10% 0% / 19% 10% 0% 0% ;
 }
 .fg1{
     width: 30%;
@@ -51,7 +57,9 @@
     padding-bottom: 2%;
 }
 .mb{
-    background-image: url(bg.jpeg);
+  background-image: url(bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: auto 150%;
 }
 .zam{
     padding-left: 26%;
@@ -59,14 +67,139 @@
     color: blue;
 }
 .sub{
-    margin-left: 24%;
+    margin-left: 35%;
     padding: 2%;
     
 }
 .form{
-    padding-left: 20%;
+    padding-left: 10%;
 }
 .bot{
 font-size: 90%;
-text-align: center;
+text-align:left;
+}
+.box{
+font-size: 140%;
+}
+.pp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-style: italic;
+    font-size: 300%;
+}
+.ext{
+    width: 100%;
+    height: 90%;
+    padding-top: 4%;
+    background-color: black;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 36%;
+    margin-top: 3%;
+    justify-content: center;
+    padding: 15px 30px;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10rem;
+    transition: all 0.02s;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(37, 37, 37);
+    z-index: 0;
+    box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .button:hover {
+    background: rgb(193, 228, 248);
+    color: rgb(33, 0, 85);
+  }
+  
+  .button:active {
+    transform: scale(0.97);
+  }
+  
+  .hoverEffect {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .hoverEffect div {
+    background: rgb(222, 0, 75);
+    background: linear-gradient(
+      90deg,
+      rgba(222, 0, 75, 1) 0%,
+      rgba(191, 70, 255, 1) 49%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    border-radius: 40rem;
+    width: 10rem;
+    height: 10rem;
+    transition: 0.4s;
+    filter: blur(20px);
+    animation: effect infinite 3s linear;
+    opacity: 0.5;
+  }
+  
+  .button:hover .hoverEffect div {
+    width: 8rem;
+    height: 8rem;
+  }
+  
+  @keyframes effect {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .lb{
+    background-color: black;
+  }
+.body {
+    margin: 0;
+    background: #fff; /* Default background color for mobile */
+}
+
+.mobile-container {
+    width: 100%; /* Full width on mobile */
+    max-width: 100%; /* Adjust to your mobile design width */
+    min-height: 100vh;
+    margin: 0 auto;
+    background: #fff; /* Background color for mobile view */
+    background-image: url(bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+@media only screen and (min-width: 1024px) { /* Apply only for desktops/laptops */
+  .body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: url('path-to-your-background-image.jpg') center/cover no-repeat;
+      overflow: hidden; /* Prevent scrolling */
+  }
+
+  .mobile-container {
+      width: 375px; /* Fixed width matching mobile design */
+      height: 812px; /* Fixed height matching mobile design */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Optional shadow */
+      overflow-y: auto; /* Scrollable if needed */
+      background: #fff;
+  }
 }
